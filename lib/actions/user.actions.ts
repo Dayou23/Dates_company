@@ -9,9 +9,9 @@ import { connectToDatabase } from "@/lib/database";
 import { handleError } from "@/lib/utils";
 
 import { CreateUserParams, UpdateUserParams } from "@/types";
-import User from "../models/user.model";
-import Order from "../models/order.model";
-import Event from "../models/event.model";
+import User from "../database/models/user.model";
+import Order from "../database/models/order.model";
+import Event from "../database/models/event.model";
 
 export async function createUser(user: CreateUserParams) {
   try {
