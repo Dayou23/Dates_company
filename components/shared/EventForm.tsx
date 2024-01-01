@@ -31,9 +31,10 @@ import { IEvent } from "@/lib/database/models/event.model";
 type EventFormProps = {
   userId: string;
   type: "Create" | "Update";
-  event: IEvent;
+  event?: IEvent;
   eventId?: string;
 };
+
 function EventForm({ userId, type, event, eventId }: EventFormProps) {
   const initialValues =
     event && type === "Update"
