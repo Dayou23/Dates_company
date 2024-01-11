@@ -31,7 +31,7 @@ function Header() {
           </SignedIn>
           <SignedOut>
             <Button asChild className="rounded-full" size="lg">
-              <Link href="/sing-in">login</Link>
+              <Link href="/sign-in">login</Link>
             </Button>
           </SignedOut>
         </div>

@@ -6,9 +6,11 @@ import React from "react";
 
 function Navitems() {
   const pathname = usePathname();
+  // console.log("pathname", pathname);
   return (
     <ul className="md:flex-between flex w-full flex-col items-start gap-5 md:flex-row">
       {headerLinks.map((link) => {
+        // console.log("link.route", link.route);
         const isActive = pathname === link.route;
         return (
           <li
